@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kang — QE Lead. 2008년부터 커머스 플랫폼에서 품질을 제품 설계의 일부로 만드는 Quality Engineering Lead.">
+  <title>Kang — Quality Engineering Lead</title>
+  <!-- Adri dark — Inter + Instrument Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/tokens.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <!-- nav -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="wordmark">Kang</a>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-label="메뉴 열기"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="#approach">Approach</a></li>
+          <li><a class="site-nav__link" href="#work">Work</a></li>
+          <li><a class="site-nav__link" href="#career">Career</a></li>
+          <li><a class="site-nav__link" href="#faq">FAQ</a></li>
+          <li><a class="site-nav__link btn btn-primary" href="#contact">Get in touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- hero -->
+    <section id="hero" class="section hero">
+      <div class="container">
+        <p class="section-label">Quality Engineering Lead</p>
+        <h1 class="hero-name">Hey, I'm Kang.</h1>
+        <p class="hero-tagline">
+          2008년 커머스 플랫폼 Test Engineer로 시작해, 17년간 결제·주문·재고·프로모션 등
+          이커머스 핵심 도메인을 깊이 파고들었습니다. 수동 테스트에서 자동화, CI/CD 품질 게이트,
+          관측성, QE 조직 설계까지 — <strong>품질을 '검증 단계'가 아니라 '제품 설계의 일부'로
+          만드는 것</strong>을 전문으로 합니다.
+        </p>
+        <blockquote class="hero-quote">
+          결함을 찾는 사람이 아니라, 결함이 생기기 어려운 시스템을 만드는 사람.
+        </blockquote>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#work" class="btn btn-text">Selected work →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- approach -->
+    <section id="approach" class="section">
+      <div class="container">
+        <p class="section-label">My Approach</p>
+        <div class="section-header section-header--narrow">
+          <h2>Quality as a system property</h2>
+          <p class="section-intro">
+            테스트는 릴리즈 직전에 "하는 것"이 아니라, 설계·개발·배포·운영 전 단계에
+            내재되어야 합니다.
+          </p>
+        </div>
+        <div class="grid-approach">
+          <article class="approach-item">
+            <h3>Shift-left, stay honest</h3>
+            <p>
+              자동화와 CI gate가 회귀를 빠르게 확인합니다. 사람의 역할은 gatekeeping이 아니라
+              exploratory testing, risk assessment, test design review입니다. 커버리지 %보다
+              critical path coverage와 past incident regression이 더 솔직한 지표입니다.
+            </p>
+          </article>
+          <article class="approach-item">
+            <h3>Blameless, but accountable</h3>
+            <p>
+              사람 탓이 아니라 시스템 탓 — 장애 후 postmortem에서 "우리 시스템이 왜 이 실수를
+              허용했나"를 먼저 묻습니다. Flaky test는 quarantine → fix → re-admit, 예외 없이
+              처리합니다.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- stats -->
+    <section id="stats" class="section section--elevated">
+      <div class="container">
+        <div class="grid-stats">
+          <div>
+            <p class="stat-value">17+</p>
+            <p class="stat-label">Years in commerce quality engineering</p>
+          </div>
+          <div>
+            <p class="stat-value">14→6%</p>
+            <p class="stat-label">Change failure rate (2024–2025)</p>
+          </div>
+          <div>
+            <p class="stat-value">94%</p>
+            <p class="stat-label">Critical path automated regression</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- work / case studies -->
+    <section id="work" class="section">
+      <div class="container">
+        <p class="section-label">Case Studies</p>
+        <div class="section-header">
+          <h2>Selected work</h2>
+        </div>
+        <div class="grid-projects">
+          <a href="#work-order" class="project-card" id="work-order">
+            <!-- Order Pipeline — Unsplash: Centique (server room) -->
+            <div class="project-card__media project-card__media--order">
+              <img
+                class="project-card__img"
+                src="./assets/images/order-pipeline.jpg"
+                alt="데이터 센터 서버 랙 — Order Pipeline v3 플랫폼 마이그레이션"
+                width="1040"
+                height="1300"
+                loading="lazy"
+              >
+              <span class="project-card__media-label">Platform Migration</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                Order Pipeline v3
+                <span class="project-card__meta"> — Quality Lead</span>
+              </h3>
+              <p class="project-card__desc">
+                Monolithic order module → event-driven pipeline. Shadow traffic comparison,
+                progressive traffic shift, rollback drill 3회. Cutover weekend incident zero,
+                post-migration 30일 order discrepancy 0건.
+              </p>
+            </div>
+          </a>
+          <a href="#work-promo" class="project-card" id="work-promo">
+            <!-- Promotion Engine — Pexels: Kaboompics (sale sign + shopping cart) -->
+            <div class="project-card__media project-card__media--promo">
+              <img
+                class="project-card__img"
+                src="./assets/images/promotion-engine.jpg"
+                alt="할인 세일 표시와 미니 쇼핑카트 — Promotion Engine 프로모션·쿠폰 시스템"
+                width="1040"
+                height="1300"
+                loading="lazy"
+              >
+              <span class="project-card__media-label">Promotion Engine</span>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">
+                Promotion Engine Rewrite
+                <span class="project-card__meta"> — Test Architect</span>
+              </h3>
+              <p class="project-card__desc">
+                장바구니 쿠폰 + 카테고리 할인 + 멤버십 조합 폭발. Property-based testing,
+                golden test suite 38건 regression. Launch 후 60일 promotion-related Sev2+ zero.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section id="testimonials" class="section section--elevated">
+      <div class="container">
+        <p class="section-label">What colleagues say</p>
+        <div class="section-header">
+          <h2>Testimonials</h2>
+        </div>
+        <div class="grid-testimonials">
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">
+              Kang은 'No'라고 말할 때 항상 대안을 가져온다.
+            </blockquote>
+            <figcaption class="testimonial__author">Backend Chapter Lead</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">
+              장애 후 postmortem에서 가장 먼저 '우리 시스템이 왜 이 실수를 허용했나'를 묻는다.
+            </blockquote>
+            <figcaption class="testimonial__author">SRE Manager</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">
+              QA 승인 gate 없애자고 했을 때 가장 반대했던 사람이 6개월 후 가장 강력한 지지자가 됐다.
+            </blockquote>
+            <figcaption class="testimonial__author">Engineering Director</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote class="testimonial__quote">
+              Flaky test 하나를 quarantine하는 데 3시간 쓰는 걸 보면서, 테스트 코드도 프로덕션 코드다 배웠다.
+            </blockquote>
+            <figcaption class="testimonial__author">Junior QE</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- career -->
+    <section id="career" class="section">
+      <div class="container">
+        <p class="section-label">Career</p>
+        <div class="section-header section-header--narrow">
+          <h2>17 years in commerce</h2>
+          <p class="section-intro">
+            17년 동안 한 가지 산업 — 커머스 — 안에서만 일했습니다. 상태 전이, 동시성,
+            외부 연동, 프로모션 규칙이 겹치면서 품질 리스크가 기하급수적으로 커지는
+            도메인입니다.
+          </p>
+        </div>
+
+        <!-- timeline summary -->
+        <div class="timeline" aria-label="경력 요약">
+          <div class="timeline-item">
+            <p class="timeline-year">2008</p>
+            <p class="timeline-role">Test Engineer — 커머스 플랫폼</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-year">2012</p>
+            <p class="timeline-role">Senior Test Engineer — 자동화 전환 주도</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-year">2016</p>
+            <p class="timeline-role">Test Architect — 플랫폼 QE 설계</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-year">2020</p>
+            <p class="timeline-role">Staff QE / QE Chapter Lead</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-year">2023</p>
+            <p class="timeline-role">QE Lead (현재)</p>
+          </div>
+        </div>
+
+        <!-- career details accordion (native details) -->
+        <div class="career-details">
+          <details class="career-details__item">
+            <summary class="career-details__summary">2008–2011 · Test Engineer</summary>
+            <div class="career-details__body">
+              <p>
+                국내 중견 커머스 플랫폼 QA팀 합류. 프로모션 수동 테스트, PG 연동 회귀,
+                모바일 웹 주문 플로우 점검. 하루 200건+ 테스트 케이스를 Excel로 관리.
+              </p>
+              <p>
+                <strong>2010 추석 프로모션:</strong> 할인 조합 버그로 실결제 0원 발생 (340건,
+                2시간 17분). "경계값은 항상 실제 돈과 연결된다"는 교훈.
+              </p>
+            </div>
+          </details>
+          <details class="career-details__item">
+            <summary class="career-details__summary">2012–2015 · Senior Test Engineer</summary>
+            <div class="career-details__body">
+              <p>테스트 자동화 전환 TF 실무 리더. E2E 12개 핵심 여정 자동화, Smoke/Regression suite 분리.</p>
+              <ul>
+                <li>Flaky rate 23% → 4% (6개월)</li>
+                <li>Page Object + Golden Account Set 표준화</li>
+              </ul>
+            </div>
+          </details>
+          <details class="career-details__item">
+            <summary class="career-details__summary">2016–2019 · Test Architect</summary>
+            <div class="career-details__body">
+              <p>MSA 40여 서비스 환경에서 품질 아키텍처 설계.</p>
+              <ul>
+                <li>Pact contract testing — integration defect 월 47→11건</li>
+                <li>Synthetic + RUM monitoring — MTTD 18→4분</li>
+                <li>Test Environment as Code (Docker + Terraform)</li>
+              </ul>
+            </div>
+          </details>
+          <details class="career-details__item">
+            <summary class="career-details__summary">2020–2022 · QE Chapter Lead</summary>
+            <div class="career-details__body">
+              <p>QE Chapter 설립, Career Ladder, Quality Guild, Pair Testing with Developers.</p>
+              <p>COVID-19 기간 블랙프라이데이급 평일 트래픽 대응 — Peak season Sev1 zero (2020–2021).</p>
+            </div>
+          </details>
+          <details class="career-details__item">
+            <summary class="career-details__summary">2023–현재 · QE Lead</summary>
+            <div class="career-details__body">
+              <p>Quality Strategy, QE Org Design, Engineering Partnership, Incident Learning Loop.</p>
+              <ul>
+                <li>QA 승인 gate → automated quality gate 전환</li>
+                <li>Deploy frequency 주 2회 → 일 4회+</li>
+                <li>AI-assisted test generation, Quality Observability Platform (진행 중)</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section--elevated">
+      <div class="container">
+        <p class="section-label">FAQ</p>
+        <div class="section-header">
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq-wrap">
+          <div class="faq-list" role="list">
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                QA 승인 gate를 없앴다고 했는데, 품질은 어떻게 보장하나요?
+                <span class="faq-trigger__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                Gate를 사람 → automation으로 옮겼습니다. PR merge 조건: unit + contract + smoke pass,
+                coverage threshold, no open Sev2+ regression. 사람의 역할은 exploratory, risk assessment,
+                test design review입니다.
+              </div>
+            </div>
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                개발자가 테스트를 안 짜면요?
+                <span class="faq-trigger__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                "안 짜면"이 아니라 "짜기 어렵게 설계되어 있으면"이 문제입니다. Testability review를
+                design phase에 넣고, Pair testing으로 함께 한 번 짜면 다음부터 혼자도 합니다.
+              </div>
+            </div>
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                QE Lead인데 직접 테스트도 하나요?
+                <span class="faq-trigger__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                네. 분기당 1–2번 "Gemba week" — squad에 embed되어 test plan 작성, CI 디버깅,
+                on-call 참여. 리더가 현장을 모르면 strategy는 공중에 뜹니다.
+              </div>
+            </div>
+            <div class="faq-item" role="listitem">
+              <button type="button" class="faq-trigger" aria-expanded="false">
+                가장 어려웠던 결정은?
+                <span class="faq-trigger__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                2022년 전사 E2E suite 40% 삭제. 유지 비용 &gt; 발견 가치. contract + integration +
+                targeted E2E로 재구성. 6개월 후 change failure rate 개선으로 consensus 형성.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="section contact-band">
+      <div class="container">
+        <p class="section-label">Get in Touch</p>
+        <h2>함께 일할지 판단하는 데<br>도움이 되었으면 합니다</h2>
+        <p>
+          17년 전 "버그를 찾는 사람"이었던 저는, 지금은 "버그가 찾아오기 어려운 시스템을
+          만드는 사람"입니다. 더 깊은 이야기는 커피 한 잔으로 이어가요.
+        </p>
+        <a href="mailto:kang.qe@example.com" class="btn btn-primary">Schedule a chat</a>
+        <div class="contact-links">
+          <a href="mailto:kang.qe@example.com">kang.qe@example.com</a>
+          <a href="https://github.com/kang-qe" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/kang-qe" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span>Seoul, Korea (Hybrid OK)</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__copy">© 2025 Kang · Quality Engineering Lead</p>
+      <ul class="site-footer__links">
+        <li><a href="#hero">Top</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

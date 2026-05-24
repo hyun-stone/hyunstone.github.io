@@ -1,0 +1,33 @@
+/* Adri Dark — design tokens (reference.md) */
+:root {
+  --adri-canvas: #0f0f0d;
+  --adri-canvas-elevated: #161614;
+  --adri-surface: #1c1c1a;
+  --adri-surface-hover: #242422;
+  --adri-hairline: #2a2a27;
+  --adri-hairline-soft: #222220;
+  --adri-ink: #f4f3ef;
+  --adri-body: #a8a69e;
+  --adri-muted: #6f6d66;
+  --adri-accent: #e8e4dc;
+  --adri-accent-hover: #f4f3ef;
+  --adri-on-accent: #0f0f0d;
+  --adri-accent-subtle: #3d3d38;
+
+  /* spacing */
+  --section-y: 80px;
+  --container-max: 1120px;
+  --nav-height: 64px;
+  --grid-gap: 24px;
+
+  /* typography */
+  --font-sans: "Inter", system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --section-y: 120px;
+    --grid-gap: 32px;
+  }
+}
