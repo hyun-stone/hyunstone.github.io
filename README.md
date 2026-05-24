@@ -30,29 +30,31 @@ python3 -m http.server 8080
 
 > `index.html`을 직접 열어도 대부분 동작하지만, 상대 경로 확인을 위해 서버 사용을 권장합니다.
 
-## GitHub Pages 배포 (나중)
+## GitHub Pages 배포
 
-1. GitHub에 새 repository 생성 (예: `kang-portfolio`)
-2. 이 디렉터리 내용을 push (`index.html`이 repo **root**에 있어야 함)
+**저장소:** [github.com/hyun-stone/hyunstone.github.io](https://github.com/hyun-stone/hyunstone.github.io)  
+**라이브 URL (Pages 활성화 후):** [https://hyunstone.github.io](https://hyunstone.github.io)
 
-   ```bash
-   git init
-   git add index.html css/ js/ README.md introduce.md
-   git commit -m "Add Kang portfolio static site"
-   git branch -M main
-   git remote add origin https://github.com/<username>/<repo>.git
-   git push -u origin main
-   ```
+### 코드 push — 완료
 
-3. GitHub **Settings → Pages**
-   - Source: **Deploy from a branch**
-   - Branch: **`main`** / **`/ (root)`**
-4. 1–2분 후 `https://<username>.github.io/<repo>/` 에서 확인
+`main` 브랜치 root에 사이트 파일이 push되어 있습니다.
 
-### 배포 시 주의
+### Pages 활성화 — 한 번만 필요
 
-- CSS/JS 경로는 `./css/...`, `./js/...` 상대 경로 사용 (project site 호환)
-- 빌드 도구 불필요 — push만으로 배포됨
+GitHub PAT 권한 제한으로 Pages 설정은 웹에서 한 번 켜야 합니다:
+
+1. [Settings → Pages](https://github.com/hyun-stone/hyunstone.github.io/settings/pages) 열기
+2. **Build and deployment → Source:** `Deploy from a branch`
+3. **Branch:** `main` / **`/ (root)`** → **Save**
+4. 1~3분 후 [https://hyunstone.github.io](https://hyunstone.github.io) 확인
+
+### 이후 업데이트
+
+```bash
+git add .
+git commit -m "Update site"
+git push origin main
+```
 
 ## 디자인
 
