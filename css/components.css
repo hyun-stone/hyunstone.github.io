@@ -219,6 +219,34 @@
   line-height: 1.6;
 }
 
+/* ── strengths card ── */
+.strength-item {
+  padding: 28px;
+  border: 1px solid var(--adri-hairline);
+  border-radius: 12px;
+  background: var(--adri-surface);
+}
+
+.strength-item h3 {
+  font-size: 18px;
+}
+
+.strength-item p {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--adri-body);
+}
+
+.strength-item__metric {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--adri-ink);
+  letter-spacing: 0.02em;
+}
+
 /* ── project card ── */
 .project-card {
   display: block;

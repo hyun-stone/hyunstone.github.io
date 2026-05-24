@@ -142,3 +142,15 @@
   font-size: 17px;
   color: var(--adri-ink);
 }
+
+/* strengths — 2x2 scannable grid */
+.grid-strengths {
+  display: grid;
+  gap: var(--grid-gap);
+}
+
+@media (min-width: 768px) {
+  .grid-strengths {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
